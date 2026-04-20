@@ -1,29 +1,23 @@
 import { SectionWrapper } from '@/components/layout/SectionWrapper'
 
 function ClientCard({
-  initials,
+  id,
   name,
   role,
   children,
 }: {
-  initials: string
+  id: string
   name: string
   role: string
   children: React.ReactNode
 }) {
   return (
     <article
-      aria-labelledby={`client-${initials.toLowerCase()}-name`}
-      className="bg-surface border border-border rounded-sm p-8"
+      aria-labelledby={`client-${id}-name`}
+      className="bg-surface border border-border rounded-sm p-8 border-l-2 border-l-accent"
     >
-      <div
-        aria-hidden="true"
-        className="w-14 h-14 rounded-full border border-accent flex items-center justify-center text-lg font-semibold text-accent mb-5"
-      >
-        {initials}
-      </div>
       <h3
-        id={`client-${initials.toLowerCase()}-name`}
+        id={`client-${id}-name`}
         className="text-xl font-semibold text-text-primary tracking-tight mb-1"
       >
         {name}
@@ -46,7 +40,7 @@ export function Clients() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <ClientCard
-          initials="AC"
+          id="acsd"
           name="ACSD"
           role="Accessibility Centre for Students with Disabilities — Concordia University"
         >
@@ -63,7 +57,7 @@ export function Clients() {
           </p>
         </ClientCard>
 
-        <ClientCard initials="Da" name="Daud" role="Primary user — low-vision student, SGW campus">
+        <ClientCard id="daud" name="Daud" role="Primary user — low-vision student, SGW campus">
           <p className="text-sm leading-relaxed text-text-secondary mb-3">
             Daud is a low-vision student who navigates the Hall Building daily. He has residual
             vision that allows him to perceive light and movement but not read standard signage at a

@@ -2,29 +2,29 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  /* Backgrounds */
-  --color-bg: #0d0d0d;
-  --color-surface: #161616;
-  --color-border: #2a2a2a;
+  /* Light-mode backgrounds */
+  --color-bg: #f7f5f2;
+  --color-surface: #eeecea;
+  --color-border: #dddbd7;
 
   /* Text */
-  --color-text-primary: #f0f0f0;
-  --color-text-secondary: #a8a8a8;
-  --color-text-muted: #6a6a6a;
+  --color-text-primary: #111110;
+  --color-text-secondary: #52504d;
+  --color-text-muted: #94918c;
 
-  /* Accent */
-  --color-accent: #e8d5b7;
-  --color-accent-dim: #c4a97d;
+  /* Accent — warm brown, readable on light bg */
+  --color-accent: #7c5c3e;
+  --color-accent-dim: #a07850;
 
-  /* Prototype iteration accents */
-  --color-iter-wood: #7ec8a4;
-  --color-iter-acrylic: #7ab8d4;
-  --color-iter-emb1: #c4a3d4;
-  --color-iter-emb2: #d4a3a3;
-  --color-iter-3d-web: #a3c4d4;
-  --color-iter-3d-print: #d4c4a3;
+  /* Prototype iteration accents (unchanged — used as borders) */
+  --color-iter-wood: #5aab82;
+  --color-iter-acrylic: #4a96bb;
+  --color-iter-emb1: #9a6eb8;
+  --color-iter-emb2: #bb6a6a;
+  --color-iter-3d-web: #6a96bb;
+  --color-iter-3d-print: #9a8c6a;
 
-  /* Fonts — set by next/font via CSS vars */
+  /* Fonts */
   --font-sans: var(--font-inter), system-ui, sans-serif;
   --font-mono: var(--font-source-code-pro), "Courier New", monospace;
 }
@@ -37,7 +37,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid #f0f0f0;
+    outline: 2px solid var(--color-text-primary);
     outline-offset: 3px;
     border-radius: 2px;
   }
@@ -69,7 +69,6 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* details/summary reset for cross-browser consistency */
   summary {
     list-style: none;
     cursor: pointer;
