@@ -31,7 +31,7 @@ export function PrototypeCard({ proto }: { proto: Prototype }) {
             alt={proto.imageAlt}
             width={proto.imageWidth}
             height={proto.imageHeight}
-            className="w-full h-48 object-cover"
+            className="w-full h-auto"
             sizes="(min-width: 1024px) 50vw, 100vw"
           />
         ) : (
@@ -63,32 +63,37 @@ export function PrototypeCard({ proto }: { proto: Prototype }) {
         {/* Description */}
         <p className="text-sm leading-relaxed text-text-secondary mb-4">{proto.description}</p>
 
-        {/* Feedback panels */}
-        <div className="space-y-2 border-t border-border pt-4">
-          <details className="group">
-            <summary className="flex items-center justify-between text-xs font-mono text-text-muted hover:text-text-secondary transition-colors py-1">
-              <span>Daud&apos;s feedback</span>
-              <span className="group-open:rotate-180 transition-transform" aria-hidden="true">
-                ↓
-              </span>
-            </summary>
-            <p className="mt-2 text-sm leading-relaxed text-text-secondary pl-0">
-              {proto.feedbackDaud}
-            </p>
-          </details>
-
-          <details className="group">
-            <summary className="flex items-center justify-between text-xs font-mono text-text-muted hover:text-text-secondary transition-colors py-1">
-              <span>Vytautas&apos;s feedback (ProBlind)</span>
-              <span className="group-open:rotate-180 transition-transform" aria-hidden="true">
-                ↓
-              </span>
-            </summary>
-            <p className="mt-2 text-sm leading-relaxed text-text-secondary pl-0">
-              {proto.feedbackVytautas}
-            </p>
-          </details>
-        </div>
+        {/* Feedback panels — only rendered when content is provided */}
+        {(proto.feedbackDaud || proto.feedbackVytautas) && (
+          <div className="space-y-2 border-t border-border pt-4">
+            {proto.feedbackDaud && (
+              <details className="group">
+                <summary className="flex items-center justify-between text-xs font-mono text-text-muted hover:text-text-secondary transition-colors py-1">
+                  <span>Daud&apos;s feedback</span>
+                  <span className="group-open:rotate-180 transition-transform" aria-hidden="true">
+                    ↓
+                  </span>
+                </summary>
+                <p className="mt-2 text-sm leading-relaxed text-text-secondary">
+                  {proto.feedbackDaud}
+                </p>
+              </details>
+            )}
+            {proto.feedbackVytautas && (
+              <details className="group">
+                <summary className="flex items-center justify-between text-xs font-mono text-text-muted hover:text-text-secondary transition-colors py-1">
+                  <span>Vytautas&apos;s feedback (ProBlind)</span>
+                  <span className="group-open:rotate-180 transition-transform" aria-hidden="true">
+                    ↓
+                  </span>
+                </summary>
+                <p className="mt-2 text-sm leading-relaxed text-text-secondary">
+                  {proto.feedbackVytautas}
+                </p>
+              </details>
+            )}
+          </div>
+        )}
       </div>
     </article>
   )
