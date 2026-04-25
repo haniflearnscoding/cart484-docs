@@ -24,7 +24,7 @@ export const PROTOTYPES: Prototype[] = [
     accentColor: '#7ec8a4',
     week: 'Week 4',
     description:
-      'Our first physical prototype was routed from Baltic birch plywood on the EV building CNC mill. Building outlines were cut as shallow relief channels; the Hall Building was distinguished by a deeper pocket. The map covered the Hall–metro corridor at 1:500 scale.',
+      'Our first physical prototype was routed from Baltic birch plywood on the EV building CNC mill. Building outlines were cut as shallow relief channels.',
     imageAlt:
       'CNC-routed Baltic birch plywood prototype showing building outlines as shallow engraved channels with a QR code in the upper right corner.',
     imageSrc: '/cart484-docs/images/prototype-wood.png',
@@ -50,11 +50,11 @@ export const PROTOTYPES: Prototype[] = [
     iteration: 3,
     slug: 'embroidery-v1',
     title: 'Embroidery on Fabric — v1',
-    material: 'Cotton canvas, machine embroidery',
+    material: 'Cotton canvas, hand embroidery',
     accentColor: '#c4a3d4',
     week: 'Week 8',
     description:
-      'Inspired by the Tactonom ecosystem\'s soft-surface format, we moved to machine-embroidered cotton canvas. Building perimeters were stitched in dense satin stitch (raised ridge); the metro corridor used a raised chain stitch. Different thread colors distinguish each zone.',
+      'Inspired by the Tactonom ecosystem\'s soft-surface format, we moved to hand-embroidered cotton canvas. Building perimeters were stitched in dense satin stitch (raised ridge); the metro corridor used a raised chain stitch. Different thread colors distinguish each zone.',
     imageAlt:
       'Embroidered cotton canvas prototype (unframed) showing raised satin stitch outlines and chain stitch corridors in multicolored thread on white fabric, with visible puckering.',
     imageSrc: '/cart484-docs/images/prototype-embroidery-v1.jpg',
@@ -65,11 +65,11 @@ export const PROTOTYPES: Prototype[] = [
     iteration: 4,
     slug: 'embroidery-v2-framed',
     title: 'Embroidery on Fabric — v2 (Framed)',
-    material: 'Cotton canvas on rigid backing, machine embroidery + Braille overlay',
+    material: 'Cotton canvas on rigid backing, hand embroidery',
     accentColor: '#d4a3a3',
     week: 'Week 10',
     description:
-      'V2 addressed puckering by stretching the embroidered canvas over a rigid backing and securing it in a shallow wooden frame. Braille adhesive dots were applied at building entry points. Scale was adjusted to 1:300 for the most critical corridor segment.',
+      'V2 addressed puckering by stretching the hand-embroidered canvas over a rigid backing and securing it in a shallow wooden frame.',
     imageAlt:
       'Framed embroidered canvas prototype with rigid backing in a wooden frame, showing multicolored stitching of the Hall Building floor plan and metro corridor with Braille title.',
     imageSrc: '/cart484-docs/images/prototype-embroidery-v2.jpg',
@@ -99,7 +99,7 @@ export const PROTOTYPES: Prototype[] = [
     accentColor: '#d4c4a3',
     week: 'Week 13',
     description:
-      'The final physical prototype was 3D printed in PLA on Concordia\'s FDM printers. Building perimeters were printed as 2.2mm-high walls; paths as 1.5mm raised lines; entrances as 4mm diameter raised circles — all matching the ProBlind Standard v4 tactile specification. The print was scaled to A4 and includes a Braille title, north arrow, and legend.',
+      'The final physical prototype was 3D printed in PLA on Concordia\'s FDM printers. Building perimeters were printed as 2.2mm-high walls; paths as 1.5mm raised lines; entrances as 4mm diameter raised circles — all matching the ProBlind Standard v4 tactile specification. The print was scaled to A4 and includes a north arrow and legend.',
     imageAlt:
       'Video of the 3D printed PLA tactile map — an A4 sheet with raised building walls, path lines, and entrance circles.',
     imageSrc: null,
