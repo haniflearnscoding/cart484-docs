@@ -3,7 +3,6 @@ import { Problem } from '@/components/sections/Problem'
 import { Clients } from '@/components/sections/Clients'
 import { TheMap } from '@/components/sections/TheMap'
 import { Prototypes } from '@/components/sections/Prototypes'
-import { Reflections } from '@/components/sections/Reflections'
 import { Team } from '@/components/sections/Team'
 
 export default function Page() {
@@ -14,7 +13,6 @@ export default function Page() {
       <Clients />
       <TheMap />
       <Prototypes />
-      <Reflections />
       <Team />
     </main>
   )
