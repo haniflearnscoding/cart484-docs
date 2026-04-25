@@ -50,7 +50,7 @@ export const PROTOTYPES: Prototype[] = [
     material: 'Cotton canvas, hand embroidery',
     accentColor: '#c4a3d4',
     description:
-      'Inspired by the Tactonom ecosystem\'s soft-surface format, we moved to hand-embroidered cotton canvas. Building perimeters were stitched in dense satin stitch (raised ridge); the metro corridor used a raised chain stitch. Different thread colors distinguish each zone.',
+      'Inspired by the Tactonom ecosystem\'s soft-surface format, we moved to hand-embroidered cotton canvas. Different thread colors distinguish each zone.',
     imageAlt:
       'Embroidered cotton canvas prototype (unframed) showing raised satin stitch outlines and chain stitch corridors in multicolored thread on white fabric, with visible puckering.',
     imageSrc: '/cart484-docs/images/prototype-embroidery-v1.jpg',
