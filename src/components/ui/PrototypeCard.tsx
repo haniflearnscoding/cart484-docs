@@ -23,9 +23,18 @@ export function PrototypeCard({ proto }: { proto: Prototype }) {
       className="bg-surface border border-border rounded-sm overflow-hidden"
       style={{ borderLeftColor: proto.accentColor, borderLeftWidth: '3px' }}
     >
-      {/* Image */}
+      {/* Image / Video */}
       <div className="w-full overflow-hidden bg-border">
-        {proto.imageSrc ? (
+        {proto.videoSrc ? (
+          <video
+            src={proto.videoSrc}
+            aria-label={proto.imageAlt}
+            controls
+            playsInline
+            preload="metadata"
+            className="w-full h-auto"
+          />
+        ) : proto.imageSrc ? (
           <Image
             src={proto.imageSrc}
             alt={proto.imageAlt}

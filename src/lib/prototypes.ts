@@ -10,6 +10,7 @@ export type Prototype = {
   feedbackVytautas?: string
   imageAlt: string
   imageSrc: string | null
+  videoSrc?: string
   imageWidth: number
   imageHeight: number
 }
@@ -100,8 +101,9 @@ export const PROTOTYPES: Prototype[] = [
     description:
       'The final physical prototype was 3D printed in PLA on Concordia\'s FDM printers. Building perimeters were printed as 2.2mm-high walls; paths as 1.5mm raised lines; entrances as 4mm diameter raised circles — all matching the ProBlind Standard v4 tactile specification. The print was scaled to A4 and includes a Braille title, north arrow, and legend.',
     imageAlt:
-      '3D printed PLA prototype (photo pending) — A4 footprint with 2.2mm building perimeter walls, 1.5mm raised path lines, and 4mm entrance circles.',
+      'Video of the 3D printed PLA tactile map — an A4 sheet with raised building walls, path lines, and entrance circles.',
     imageSrc: null,
+    videoSrc: '/cart484-docs/images/prototype-3d-print.mov',
     imageWidth: 800,
     imageHeight: 600,
   },

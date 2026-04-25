@@ -16,9 +16,20 @@ export function Hero() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-xl text-[#a8a8a8] leading-relaxed max-w-2xl mb-10">
+        <p className="text-lg md:text-xl text-[#a8a8a8] leading-relaxed max-w-2xl mb-8">
           A tactile wayfinding system for blind and low-vision students at Concordia
           University&apos;s SGW Campus — co-designed with the people who navigate it every day.
+        </p>
+
+        {/* 100-word summary */}
+        <p className="text-sm text-[#888] leading-relaxed max-w-2xl mb-10 border-l-2 border-[#444] pl-4">
+          Concordia&apos;s SGW campus has no tactile wayfinding system for blind and low-vision
+          students. Over thirteen weeks, our team co-designed a series of tactile maps with Daud,
+          a low-vision student who navigates the Hall Building daily. We tested six prototypes —
+          from CNC-routed wood and laser-cut acrylic to machine embroidery and 3D printing —
+          refining each based on Daud&apos;s feedback and ProBlind Standard compliance reviews.
+          The result is a physical 3D-printed map of the Hall-to-metro corridor and an open-source
+          tool that can generate updated maps whenever the campus changes.
         </p>
 
         <hr className="border-[#2a2a2a] mb-8 max-w-2xl" />

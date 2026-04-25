@@ -2,16 +2,16 @@ import { SectionWrapper } from '@/components/layout/SectionWrapper'
 
 const reflections = [
   {
-    title: 'ProBlind compliance is harder than it looks.',
-    body: 'The v4 standard specifies not just stroke widths but a full tactile hierarchy — minimum clearances, relief heights, symbol vocabularies. Our first two prototypes violated the standard in ways that were invisible on screen. It was only by submitting to Vytautas for review that we understood how far "looks like a map" is from "works as a tactile map." This is not a critique of the standard — it is what makes the standard valuable.',
+    title: 'A map that looks right can still be unreadable.',
+    body: 'Tactile maps follow specific standards for line thickness, spacing, and symbols — rules that are invisible on a screen. Our first two prototypes looked correct but violated those standards in ways we only caught when a specialist reviewed them. Getting it right meant learning the difference between "looks like a map" and "works as a tactile map."',
   },
   {
-    title: 'Every BLV user\'s needs are different.',
-    body: 'Daud\'s feedback shaped every iteration. But Daud is one person with one specific visual profile, one familiarity with the campus, one navigation strategy. The system we built works for him; it may not work without modification for a student with a different residual vision profile, a different cane technique, or a different starting point. Accessibility is not a checkbox — it is a dialogue.',
+    title: 'Accessibility means designing for one person, then asking again.',
+    body: "Daud's feedback shaped every version of the map. But Daud is one person — with his own visual profile, his own familiarity with the campus, his own way of navigating. What worked for him may not work without changes for someone else. Accessibility isn't a box to check; it's an ongoing conversation with the people who actually use what you make.",
   },
   {
-    title: 'The pipeline is the product.',
-    body: 'We originally imagined the deliverable as a physical map. By Week 11 we understood that the SVG pipeline — the reproducible, open-source process for converting campus GeoJSON into ProBlind-compliant tactile assets — was the more durable contribution. Physical maps degrade, get lost, and go out of date when construction changes. A maintained pipeline, uploaded to ProBlind, lets any future student or advisor generate a current map on demand.',
+    title: 'The real product was the process, not the object.',
+    body: 'We started thinking our deliverable was a physical map. By the end we understood that the more lasting contribution was the open-source tool that generates the map — because physical objects get lost and go out of date when construction changes. A tool that anyone can run means the map can be updated whenever the campus changes.',
   },
 ]
 

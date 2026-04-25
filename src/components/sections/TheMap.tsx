@@ -6,29 +6,31 @@ export function TheMap() {
   return (
     <SectionWrapper id="the-map" ariaLabel="The Map">
       <p className="text-xs font-mono text-text-muted uppercase tracking-widest mb-4">
-        The Map
+        The Outcome
       </p>
       <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-text-primary mb-4">
-        From OpenStreetMap to fingertips
+        What we made
       </h2>
       <p className="text-base leading-relaxed text-text-secondary max-w-2xl mb-16">
-        We built a five-stage pipeline that converts raw OpenStreetMap data into
-        ProBlind Standard v4 compliant SVG exports — ready to print, emboss, or integrate into a
-        Tactonom audio reader. Every stage runs client-side in the browser; no server required.
+        Our final deliverable is a tactile map of the Hall Building to Guy-Concordia metro
+        corridor — the highest-priority route for blind and low-vision students on campus.
+        It comes in two forms: a 3D-printed physical map you can hold and read with your
+        fingers, and a digital version that pairs with the ProBlind audio reader so students
+        can hear room names and directions as they touch the surface.
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-        {/* Pipeline steps */}
+        {/* How it was made */}
         <div>
           <PipelineStep
             number={1}
-            title="Data Sourcing"
-            description="OpenStreetMap GeoJSON export of the SGW campus area. The dataset contains 3,675 features including buildings, footways, streets, and entrance centroids — every pedestrian-navigable element on and around campus."
+            title="Starting from campus data"
+            description="We used OpenStreetMap — the same open map data behind many navigation apps — to get accurate building outlines, footpaths, and entrance locations for the SGW campus. This meant the map is based on real geometry, not hand-drawn estimates."
           >
             <div className="rounded-sm overflow-hidden border border-border">
               <Image
                 src="/cart484-docs/images/campus-map-dark.png"
-                alt="Two dark-background map views of SGW campus, with cyan building outlines and key campus buildings highlighted in pink and yellow — the pipeline's SVG output at the campus scale."
+                alt="Two dark-background map views of SGW campus, with cyan building outlines and key campus buildings highlighted in pink and yellow."
                 width={2048}
                 height={1325}
                 className="w-full h-auto"
@@ -39,19 +41,19 @@ export function TheMap() {
 
           <PipelineStep
             number={2}
-            title="Geometric Simplification"
-            description="A Douglas-Peucker algorithm reduces vertex count by ~41% at 2m tolerance, removing sub-fingertip architectural detail while preserving building shapes and pedestrian path topology. The result is a map a finger can read, not just an eye."
+            title="Simplified for fingers, not eyes"
+            description="A map designed for vision has too much detail for touch — small corners and fine lines blur together under a fingertip. We simplified the geometry so every shape is large enough to feel distinct, without losing the overall layout."
           />
 
           <PipelineStep
             number={3}
-            title="Tactile Styling — ProBlind Standard v4"
-            description="Each feature class receives specific stroke weights and symbols from the ProBlind v4 specification: buildings at 0.8mm solid, paths at 0.8mm dashed, entrances as 1mm radius circles. A minimum 3mm clearance between parallel lines prevents tactile masking."
+            title="Following tactile map standards"
+            description="Tactile maps follow specific rules about line thickness, spacing, and symbols — just like road signs follow visual standards. We used the ProBlind Standard to make sure our map would be readable by anyone trained on tactile systems, not just familiar with our specific version."
           >
             <div className="rounded-sm overflow-hidden border border-border bg-white">
               <Image
                 src="/cart484-docs/images/svg-probind-detailed.png"
-                alt="ProBlind Standard v4 SVG output: a white-background floor plan of the Hall Building and corridor with black outlines, dotted paths, and cross-hatch texture fills as specified by the tactile standard."
+                alt="Tactile map of the Hall Building floor plan: black outlines on white, with dotted paths and textured fills showing the auditorium, corridor, and metro entry."
                 width={1623}
                 height={1142}
                 className="w-full h-auto"
@@ -62,13 +64,13 @@ export function TheMap() {
 
           <PipelineStep
             number={4}
-            title="Tactonom + Audio Integration"
-            description="The exported SVG is imported into the Tactonom editor, which overlays an interactive touchscreen layer. Students touch the embossed surface; audio descriptions of room names and turn-by-turn wayfinding instructions are triggered by contact points. The Braille title and QR code link to the audio guide."
+            title="Adding audio descriptions"
+            description="The finished map was imported into the ProBlind platform. When a student touches a spot on the embossed surface, they hear an audio description — room names, directions, or landmarks. The map works on its own, but the audio layer makes it navigable in real time."
           >
             <div className="rounded-sm overflow-hidden border border-border">
               <Image
                 src="/cart484-docs/images/tactonom-screenshot.jpg"
-                alt="Screenshot of the Tactonom web editor showing the 'Passage to Hall Map' SVG imported into the platform, with interactive regions and audio playback controls visible."
+                alt="Screenshot of the ProBlind web editor showing the Hall Building map with interactive touch regions and audio playback controls."
                 width={1280}
                 height={720}
                 className="w-full h-auto"
@@ -78,13 +80,13 @@ export function TheMap() {
           </PipelineStep>
         </div>
 
-        {/* Final SVG display */}
+        {/* Final map image */}
         <div className="lg:sticky lg:top-12">
           <figure>
             <div className="rounded-sm overflow-hidden border border-border bg-white">
               <Image
                 src="/cart484-docs/images/svg-probind-white.png"
-                alt="Final ProBlind Standard v4 compliant SVG of the Passage to Hall Map — a white-background floor plan showing the Hall Building, corridor, and metro entry with all features correctly weighted and labeled."
+                alt="Final tactile map of the Passage to Hall route — a clean floor plan showing the Hall Building, underground corridor, and metro entry, with consistent line weights and labeled key points."
                 width={2048}
                 height={1448}
                 className="w-full h-auto"
@@ -92,8 +94,8 @@ export function TheMap() {
               />
             </div>
             <figcaption className="mt-3 text-xs font-mono text-text-muted">
-              Final SVG output — ProBlind Standard v4 compliant, A4 landscape, ready for
-              embossing or Tactonom import
+              Final map — Hall Building to Guy-Concordia metro, ready for 3D printing or
+              embossing
             </figcaption>
           </figure>
         </div>

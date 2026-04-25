@@ -8,12 +8,12 @@ export function Prototypes() {
         Prototypes
       </p>
       <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-text-primary mb-4">
-        Six iterations, one user
+        Six prototypes, tested with the person who needed them
       </h2>
       <p className="text-base leading-relaxed text-text-secondary max-w-2xl mb-12">
-        Each prototype was evaluated directly with Daud and reviewed by Vytautas, our ProBlind
-        Standard advisor. Every iteration changed something real. Expand the feedback panels to
-        see what moved us forward.
+        We built and tested six versions of the map across thirteen weeks. Each one was evaluated
+        by Daud — the student the map was designed for — and reviewed against tactile map
+        standards. Every version changed something based on what we heard.
       </p>
 
       <PrototypeTimeline />
