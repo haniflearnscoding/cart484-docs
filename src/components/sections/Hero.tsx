@@ -39,7 +39,7 @@ export function Hero() {
           <div>
             <p className="text-xs font-mono text-[#6a6a6a] uppercase tracking-widest mb-2">Team</p>
             <ul className="space-y-1" aria-label="Project team">
-              {['Catherine Zaloshnja', 'Suchetha Thyamagundlam', 'Hanif Hashim'].map((name) => (
+              {['Daud Khan', 'Catherine Zaloshnja', 'Suchetha Thyamagundlam', 'Hanif Hashim'].map((name) => (
                 <li key={name} className="text-sm text-[#a8a8a8]">
                   {name}
                 </li>

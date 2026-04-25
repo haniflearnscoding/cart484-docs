@@ -7,7 +7,7 @@ export type TeamMember = {
 
 export const TEAM: TeamMember[] = [
   {
-    name: 'Daud',
+    name: 'Daud Khan',
     role: 'Co-designer',
     bio: 'Daud is a low-vision student who navigates the Hall Building every day. He evaluated every prototype we made — not as a test subject, but as the person whose actual experience was on the line. His feedback directly changed what we built at each stage, making him as much an author of this project as anyone on the team.',
     imageSrc: null,
