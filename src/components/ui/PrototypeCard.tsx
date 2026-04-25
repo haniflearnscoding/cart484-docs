@@ -57,7 +57,6 @@ export function PrototypeCard({ proto }: { proto: Prototype }) {
           >
             {String(proto.iteration).padStart(2, '0')}
           </span>
-          <span className="text-xs font-mono text-text-muted">{proto.week}</span>
           <span className="text-xs font-mono text-text-muted ml-auto">{proto.material}</span>
         </div>
 

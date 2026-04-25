@@ -4,7 +4,6 @@ export type Prototype = {
   title: string
   material: string
   accentColor: string
-  week: string
   description: string
   feedbackDaud?: string
   feedbackVytautas?: string
@@ -22,7 +21,6 @@ export const PROTOTYPES: Prototype[] = [
     title: 'CNC-Routed Wood',
     material: 'Baltic birch plywood',
     accentColor: '#7ec8a4',
-    week: 'Week 4',
     description:
       'Our first physical prototype was routed from Baltic birch plywood on the EV building CNC mill. Building outlines were cut as shallow relief channels.',
     imageAlt:
@@ -37,7 +35,6 @@ export const PROTOTYPES: Prototype[] = [
     title: 'Laser-Cut Acrylic',
     material: '3mm clear acrylic',
     accentColor: '#7ab8d4',
-    week: 'Week 6',
     description:
       'Switching to laser-cut 3mm acrylic allowed precise lines at consistent depths. We engraved the full floor plan — lobby, auditorium, corridor, and metro entry — with room-level detail and consistent stroke weights.',
     imageAlt:
@@ -52,7 +49,6 @@ export const PROTOTYPES: Prototype[] = [
     title: 'Embroidery on Fabric — v1',
     material: 'Cotton canvas, hand embroidery',
     accentColor: '#c4a3d4',
-    week: 'Week 8',
     description:
       'Inspired by the Tactonom ecosystem\'s soft-surface format, we moved to hand-embroidered cotton canvas. Building perimeters were stitched in dense satin stitch (raised ridge); the metro corridor used a raised chain stitch. Different thread colors distinguish each zone.',
     imageAlt:
@@ -67,7 +63,6 @@ export const PROTOTYPES: Prototype[] = [
     title: 'Embroidery on Fabric — v2 (Framed)',
     material: 'Cotton canvas on rigid backing, hand embroidery',
     accentColor: '#d4a3a3',
-    week: 'Week 10',
     description:
       'V2 addressed puckering by stretching the hand-embroidered canvas over a rigid backing and securing it in a shallow wooden frame.',
     imageAlt:
@@ -82,7 +77,6 @@ export const PROTOTYPES: Prototype[] = [
     title: '3D Web Prototype',
     material: 'Browser-based Three.js visualization',
     accentColor: '#a3c4d4',
-    week: 'Week 11',
     description:
       'In parallel with physical fabrication, we built a browser-based 3D prototype using Three.js and the same GeoJSON pipeline. Buildings are extruded to heights proportional to floor count; campus paths are raised polylines; the metro tunnel sits below grade.',
     imageAlt:
@@ -97,7 +91,6 @@ export const PROTOTYPES: Prototype[] = [
     title: '3D Printed Map',
     material: 'PLA, FDM printing',
     accentColor: '#d4c4a3',
-    week: 'Week 13',
     description:
       'The final physical prototype was 3D printed in PLA on Concordia\'s FDM printers. Building perimeters were printed as 2.2mm-high walls; paths as 1.5mm raised lines; entrances as 4mm diameter raised circles — all matching the ProBlind Standard v4 tactile specification. The print was scaled to A4 and includes a north arrow and legend.',
     imageAlt:
